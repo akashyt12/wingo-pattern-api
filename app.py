@@ -49,6 +49,7 @@ def get_draws(force=False):
     with _lock:
         _cache["draws"] = draws
         _cache["ts"] = time.time()
+        _cache["pred"] = None
     return draws
 
 
